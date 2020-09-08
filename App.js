@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from "react-navigation-tabs";
 import HomeScreen from "./components/HomeScreen";
 import { createAppContainer } from 'react-navigation';
-import SettingStack from "./components/Navigation";
+import SettingStack from "./components/StackNavigation";
 import {Image,StyleSheet} from "react-native-web";
 import { Entypo } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';

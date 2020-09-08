@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     },
 });
 
-export default class HomeScreen extends React.Component {
+export default class HomeScreen extends Component {
     render(){
         return (
             <View style={styles.container}>
