@@ -28,7 +28,7 @@ const TabNavigator = createBottomTabNavigator(
                 tabBarLabel:"Home Page",
                 /*Ikon*/
                 tabBarIcon: ({ tintColor }) => (
-                    <Entypo name="home" size={24} color="black" />
+                    <Entypo name="home" size={24} color={tintColor} />
                 )
             },
         },
@@ -38,7 +38,7 @@ const TabNavigator = createBottomTabNavigator(
             navigationOptions: {
                 tabBarLabel:"Settings",
                 tabBarIcon: ({ tintColor }) => (
-                    <Ionicons name="ios-settings" size={30} color="black" />
+                    <Ionicons name="ios-settings" size={24} color={tintColor} />
                 )
             },
         },
