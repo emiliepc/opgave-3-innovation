@@ -18,16 +18,21 @@ const styles = StyleSheet.create({
 // Denne TabNavigator holder styr på det yderste niveau af navigation i appen.
 const TabNavigator = createBottomTabNavigator(
     {
+        /*Tilføj routes*/
         Home: {
+            /*HVilket view skal loades*/
             screen: HomeScreen,
-
+            /*Instillinger til navigation*/
             navigationOptions: {
+                /*Navn*/
                 tabBarLabel:"Home Page",
+                /*Ikon*/
                 tabBarIcon: ({ tintColor }) => (
                     <Entypo name="home" size={24} color="black" />
                 )
             },
         },
+        /*Navn på Route*/
         Settings: {
             screen: SettingStack,
             navigationOptions: {
@@ -38,6 +43,7 @@ const TabNavigator = createBottomTabNavigator(
             },
         },
     },
+    /*Generelle label indstillinger*/
     {
         tabBarOptions: {
             showIcon:true,
@@ -47,7 +53,7 @@ const TabNavigator = createBottomTabNavigator(
             activeTintColor: 'blue',
             inactiveTintColor: 'gray',
             size:40
-        },
+        }
     }
 
 )
