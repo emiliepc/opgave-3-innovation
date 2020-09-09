@@ -10,7 +10,7 @@ export default class SettingsScreen extends Component {
     }
     handleGoToDetails = () => {
         // Når en komponent bliver mounted via navigation, får den en prop ved navn "navigation" som indeholder funktioner mv. til at navigere i appen.
-        this.props.navigation.navigate('Details');
+        this.props.navigation.goBack();
     };
 
     render(){
