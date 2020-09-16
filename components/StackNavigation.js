@@ -10,7 +10,7 @@ const SettingStack = createStackNavigator({
     },
     {
         /*Hvilket View skal starte*/
-        initialRouteName:'Details',
+        initialRouteName:'Settings',
         navigationOptions:{
             title:'Main'
         }
