@@ -1,23 +1,18 @@
 import React, { Component } from 'react'
-import {View, Text, StyleSheet, Button} from 'react-native';
+import { View, Text, StyleSheet,Button } from 'react-native';
 import {createStackNavigator} from "react-navigation-stack";
-
-
+import { Ionicons } from '@expo/vector-icons';
 
 export default class SettingsScreen extends Component {
     static navigationOptions= {
         title:'Settings'
     }
-    handleGoToDetails = () => {
-        // Når en komponent bliver mounted via navigation, får den en prop ved navn "navigation" som indeholder funktioner mv. til at navigere i appen.
-        this.props.navigation.navigate('Details');
-    };
+
 
     render(){
         return (
             <View style={styles.container}>
-                <Text style={styles.text}>Go to Details!</Text>
-                <Button title="Take me there!" onPress={this.handleGoToDetails} />
+                <Text style={styles.text}>Settings</Text>
             </View>
         );
     };
@@ -27,7 +22,7 @@ const styles = StyleSheet.create({
     container: {
         paddingTop:100,
         paddingBottom:100,
-        borderColor: 'green',
+        borderColor: "#99DD77",
         borderWidth: 20,
         flex: 1,
         justifyContent: 'center',
